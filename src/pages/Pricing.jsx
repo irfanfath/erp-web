@@ -1,41 +1,3 @@
-// import { motion } from "framer-motion";
-
-// const Pricing = () => {
-//   const tiers = [
-//     { name: "TIER 1 / Basic", features: ["Mencatat barang masuk", "Mencatat barang keluar", "Mencatat keuntungan"], price: "Rp 50.000 / bulan" },
-//     { name: "TIER 2 / Business", features: ["Semua fitur Basic", "Analisa hasil penjualan (Chart)", "Support 7x24 Jam"], price: "Rp 150.000 / bulan" },
-//     { name: "TIER 3 / Entrepreneur", features: ["Semua fitur Business", "Export data ke Excel", "AI Prediksi Penghasilan"], price: "Rp 300.000 / bulan" },
-//   ];
-
-//   return (
-//     <motion.div
-//       initial={{ opacity: 0, scale: 0.9 }}
-//       animate={{ opacity: 1, scale: 1 }}
-//       transition={{ duration: 0.5 }}
-//     >
-//       <div className="mt-10 px-10">
-//         <h1 className="text-4xl font-bold mb-6">Pricing</h1>
-//         <div className="grid md:grid-cols-3 gap-6">
-//           {tiers.map((tier, index) => (
-//             <div key={index} className="border p-6 rounded-lg shadow-lg bg-white">
-//               <h2 className="text-2xl font-bold">{tier.name}</h2>
-//               <ul className="mt-4 text-gray-600">
-//                 {tier.features.map((feature, i) => (
-//                   <li key={i}>✅ {feature}</li>
-//                 ))}
-//               </ul>
-//               <p className="mt-4 text-xl font-semibold">{tier.price}</p>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </motion.div>
-//   );
-// };
-
-// export default Pricing;
-
-
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -55,7 +17,6 @@ const Pricing = () => {
             <button className="mt-6 bg-blue-500 text-white px-4 py-2 rounded-lg">Pilih Paket</button>
           </div>
 
-          {/* Business Plan */}
           <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
             <h2 className="text-2xl font-bold">Business</h2>
             <p className="text-lg text-gray-600">Rp 199.000 / bulan</p>
@@ -67,7 +28,6 @@ const Pricing = () => {
             <button className="mt-6 bg-blue-500 text-white px-4 py-2 rounded-lg">Pilih Paket</button>
           </div>
 
-          {/* Entrepreneur Plan */}
           <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
             <h2 className="text-2xl font-bold">Entrepreneur</h2>
             <p className="text-lg text-gray-600">Rp 299.000 / bulan</p>
@@ -80,7 +40,7 @@ const Pricing = () => {
           </div>
         </div>
       </section>
-      {/* Header */}
+      
       <div className="bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center py-12 sm:w-full md:w-[90%] mx-auto rounded-md">
         <h1 className="text-4xl font-extrabold">Paket Harga</h1>
         <p className="text-lg mt-2">Pilih paket yang sesuai dengan kebutuhan bisnis Anda</p>

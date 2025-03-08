@@ -1,18 +1,3 @@
-// import React from "react";
-
-// const Home = () => {
-//   return (
-//     <div className="mt-10 px-10">
-//       <h1 className="text-4xl font-bold">Welcome to ERP Tier</h1>
-//       <p className="mt-4 text-gray-700">
-//         Solusi manajemen bisnis Anda dengan berbagai fitur pencatatan barang dan analisis penjualan.
-//       </p>
-//     </div>
-//   );
-// };
-
-// export default Home;
-
 import React from "react";
 import { Link } from "react-router-dom";
 import homeSection from "../assets/home-section.svg"

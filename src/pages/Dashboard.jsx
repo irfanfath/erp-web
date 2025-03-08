@@ -17,7 +17,6 @@ const Dashboard = () => {
     datasets: [{ label: "Penjualan", data: [10, 20, 15, 30, 25, 35], backgroundColor: "blue", borderColor: "blue" }]
   });
 
-  // Fungsi menambah barang
   const handleAddItem = () => {
     if (itemName && itemPrice) {
       setItems([...items, { name: itemName, price: Number(itemPrice) }]);
@@ -27,14 +26,12 @@ const Dashboard = () => {
     }
   };
 
-  // Fungsi ekspor ke Excel (simulasi)
   const exportToExcel = () => {
     const data = items.map(item => `${item.name}, ${item.price}`).join("\n");
     const blob = new Blob([`Nama Barang, Harga\n${data}`], { type: "text/csv" });
     saveAs(blob, "data_penjualan.csv");
   };
 
-  // Simulasi AI Prediksi Penghasilan
   const predictAI = () => {
     return profit * 1.2; // Simulasi prediksi naik 20%
   };
@@ -52,7 +49,6 @@ const Dashboard = () => {
         </select>
       </div>
 
-      {/* Fitur TIER 1 - Basic */}
       {(tier === "Basic" || tier === "Business" || tier === "Entrepreneur") && (
         <div className="border p-6 rounded-lg shadow-lg bg-white mb-6">
           <h2 className="text-2xl font-bold">Mencatat Barang Masuk/Keluar</h2>
@@ -69,7 +65,6 @@ const Dashboard = () => {
         </div>
       )}
 
-      {/* Ringkasan Keuntungan */}
       {(tier === "Basic" || tier === "Business" || tier === "Entrepreneur") && (
         <div className="border p-6 rounded-lg shadow-lg bg-gray-100 mb-6">
           <h2 className="text-2xl font-bold">Ringkasan Keuntungan</h2>
@@ -77,7 +72,6 @@ const Dashboard = () => {
         </div>
       )}
 
-      {/* Fitur TIER 2 - Business */}
       {(tier === "Business" || tier === "Entrepreneur") && (
         <div className="border p-6 rounded-lg shadow-lg bg-white mb-6">
           <h2 className="text-2xl font-bold">Analisa Hasil Penjualan</h2>
@@ -87,7 +81,6 @@ const Dashboard = () => {
         </div>
       )}
 
-      {/* Fitur TIER 3 - Entrepreneur */}
       {tier === "Entrepreneur" && (
         <div className="border p-6 rounded-lg shadow-lg bg-white mb-6">
           <h2 className="text-2xl font-bold">Export Data ke Excel</h2>

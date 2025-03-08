@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import loginImage from "../assets/login.svg"; // Pastikan path sesuai
+import loginImage from "../assets/login.svg";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -20,12 +20,10 @@ const Login = () => {
   return (
     <div className="flex items-center justify-center mt-20">
       <div className="flex bg-white rounded-lg shadow-lg w-3/4 md:p-10 sm:p-0">
-        {/* Left Side: Image */}
         <div className="w-1/2 hidden md:flex items-center justify-center bg-blue-500 rounded-l-lg p-20">
           <img src={loginImage} alt="Login Illustration" className="w-3/4" />
         </div>
 
-        {/* Right Side: Login Form */}
         <div className="w-full md:w-1/2 p-8 flex flex-col justify-center">
           <h2 className="text-2xl font-bold text-center mb-4">Login</h2>
           {error && <p className="text-red-500 text-center">{error}</p>}
