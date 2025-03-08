@@ -1,0 +1,25 @@
+Teknologi & Alasan Penggunaan
+
+1. React.js
+Framework modern untuk membangun UI dinamis dengan performa tinggi dan modularitas yang baik.
+
+2. Tailwind CSS
+Memudahkan pembuatan desain yang responsif dan konsisten dengan pendekatan utility-first.
+
+3. React Router
+Untuk navigasi antara halaman tanpa perlu reload.
+
+4. Chart.js
+Digunakan pada fitur analisis penjualan (Tier 2 & 3) untuk menampilkan data dalam bentuk grafik
+
+5. Cypress
+Framework testing otomatis untuk menguji end-to-end fungsionalitas aplikasi.
+
+6. React Hook Form
+Untuk menangani validasi input dengan lebih efisien pada form login dan contact.
+
+7. FileSaver.js
+Memungkinkan fitur ekspor data ke Excel pada Tier 3.
+
+8. TensorFlow.js
+Digunakan untuk fitur AI prediksi penghasilan pada Tier 3.
