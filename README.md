@@ -1,12 +1,34 @@
-# React + Vite
+Instalasi Dependencies
+`npm install`
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Menjalankan Project
+`npm run dev`
 
-Currently, two official plugins are available:
+Buka browser dan akses http://localhost:5173/ (sesuai dengan output terminal).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔑 Tutorial Login
 
-## Expanding the ESLint configuration
+    Website ini memiliki halaman login dengan kredensial berikut:
+    Username: test_irfan
+    Password: TestIrfan123
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📌 Langkah-langkah Login:
+
+    1. Buka halaman utama aplikasi.
+    2. Klik tombol Login.
+    3. Masukkan Username dan Password yang telah ditentukan.
+    4. Klik tombol Login.
+    5. Jika berhasil, Anda akan diarahkan ke home.
+    
+    Jika gagal, akan muncul pesan error.
+
+
+
+4️⃣ Menjalankan Test
+Jika menggunakan Terminal:
+`npx cypress run`
+
+Jika menggunakan UI:
+`npx cypress open`
+
+Pilih file uji yang ingin dijalankan.
