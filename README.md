@@ -22,13 +22,9 @@ Buka browser dan akses http://localhost:5173/ (sesuai dengan output terminal).
     
     Jika gagal, akan muncul pesan error.
 
-
-
-4️⃣ Menjalankan Test
+📌 Menjalankan Test
 Jika menggunakan Terminal:
 `npx cypress run`
 
 Jika menggunakan UI:
 `npx cypress open`
-
-Pilih file uji yang ingin dijalankan.
